@@ -21,14 +21,11 @@ gulp.task('css', function(){
 
 gulp.task('js', function(){
     return gulp.src('app.js')
-        .pipe(babel({
-            presets: ["es2015"]
-        }))
-        .pipe(gulp.dest('public/'))
+    .pipe(gulp.dest('public/'))
 });
 
 gulp.task('watch', function(){
     gulp.watch('index.html', ['html']);
     gulp.watch('style.scss'), ['css'];
-    gulp.watch('app.js'), ['js'];
+    gulp.watch('app.js', ['js']);
 })
