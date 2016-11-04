@@ -32,15 +32,15 @@ function getQuotes() {
     // if the value of the items is less than 4 add 1 else set to 0
     function forward() {
         for(let i = 0; i < quoteArray.length; i++){
-            if( quoteArray[i].author > author ) 
-                document.querySelector('#author').textContent = quoteArray[i++ ].author;
-                document.querySelector('#quote').textContent = quoteArray[i==].quote;
-                document.querySelector('#pic').src = quoteArray[i++].image;
-                    
+            if( quoteArray[i].author > author ){
+                document.querySelector('#author').textContent = quoteArray[i].author;
+                document.querySelector('#quote').textContent = quoteArray[i].quote;
+                document.querySelector('#pic').src = quoteArray[i].image;
+            };
         };
     };
 };
-// || quoteArray[i].quote > quote || quoteArray[i].pic > pic 
+
     //write back
     // if the value is greater than 0 minus 1 else set to 4
     function back() {
