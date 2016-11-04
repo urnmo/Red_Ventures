@@ -1048,3 +1048,7 @@ button {
     margin-left: 0;
     margin-right: 0;
     float: left; } }
+
+button {
+  background: red;
+  padding: 40px; }
