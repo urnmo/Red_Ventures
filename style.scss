@@ -3,7 +3,142 @@
 @include foundation-global-styles;
 @include foundation-grid;
 
-button{
-    background: red;
-    padding: 40px;
+$color1: #0B6FBC;
+$color2: #8C270D;
+$color3: #F28526;
+$color4: #F2A52D;
+$color5: #FEF7ED;
+
+
+#likes{
+    @include grid-row();
 }
+
+#like{
+    @include grid-column-offset(9);
+
+    padding: 0 25px;
+    width: 100px;
+    height: 50px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    background-image: url(heart.png);
+    background-repeat: no-repeat;
+    background-position: 10px 17px; 
+    text-align: right;
+    color: $color5;
+    @media (max-width: 750px) {
+      @include grid-column-offset(5);
+    
+}
+
+}
+ #mainSec{
+     @include grid-row();
+    background: $color1;
+     position: relative;
+     top:0;
+     left:0;
+     right:0;
+     width: 85%;
+     height: 100%;
+#sidePic{
+        @include grid-column(4);
+        position: relative;
+        margin: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom:0;
+        padding: 0;
+        height: 538px;
+        width: 200px;
+        }
+
+#qMarks{
+position: absolute;
+top: 30px;
+width: 90px;
+right: 30px;
+filter: opacity(.5);
+
+}
+
+#pic{
+         display: none;
+
+    }
+
+#piccrop{
+position: absolute;
+left: 0;
+top: 0;
+filter: saturate(.5);
+    }
+
+
+#buttons{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+
+
+.back:hover{
+    background-color: $color4;
+    -webkit-filter: blur(3px); filter: blur(3px);
+}
+.back{
+    position: absolute;
+   left: 50px;
+   width: 30px;
+   top: 450px;
+   }
+   .forward:hover{
+       background-color: $color4;
+        -webkit-filter: blur(3px); filter: blur(3px);
+
+
+   }
+    .forward{
+        position: absolute;
+       right: 50px;   
+       width: 30px;
+       top: 450px;
+
+    }
+}
+   
+#quoteItself{
+   @include grid-column(8);
+    height: 538px;
+    position: absolute;
+    top: 20px;
+    bottom: 70px;
+    left: 220px;
+}
+
+#quote{
+    position: relative;
+    margin: 0 30px 0 0;
+    left: 0px;
+    top: 0;
+    color: $color5;
+    font-family: "Arial Black", Times, serif;
+    font-size: 2.1em;
+    text-transform: uppercase;
+        @media (max-width: 750px) {
+            font-size: 1.5em;
+        }
+}
+
+#author{
+    position: relative;
+    left: 0px;
+    top: 0x;
+    color: $color5;
+    font-family: "Arial";
+    font-size: 1.5em;
+
+}
+ }

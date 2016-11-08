@@ -5,27 +5,36 @@
 	<title>Quotes Page</title>
 	<link rel="stylesheet" href="style.css">
 	<script src="app.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
 </head>
 
 <body>
-	<header id="header">
-		<div id="likeIcon">
-		</div>
-	</header>
 
-	<section id="mainSec">
+	<div id="mainSec">
+
+
 		<div id="sidePic">
+			<img id="piccrop" src="">
 			<img id="pic" src="">
-            <img id="qMarks">
-            <button class="back"><</button>
-            <button class="forward">></button>
-          
+			<img id="qMarks" src="quotation_marks.png">
 		</div>
-		<div>
-			<h1 id="quote"></h1>
+
+		<div id="buttons">
+			<img class="back" src="back.png">
+			<img class="forward" src="forward.png">
+		</div>
+
+		<div id="quoteItself">
+			<div id="liked">
+				<button id="like">0</button>
+			</div>
+
+			<h1 id="quote">Quotes</h1>
 			<p id="author"></p>
+
 		</div>
-	</section>
+	</div>
 
 </body>
 
