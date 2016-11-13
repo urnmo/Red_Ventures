@@ -1,7 +1,6 @@
 'use strict'
 
 let gulp = require('gulp');
-let babel = require('gulp-babel');
 let sass = require('gulp-sass');
 let commentless = require('gulp-strip-css-comments');
 
@@ -26,6 +25,6 @@ gulp.task('js', function(){
 
 gulp.task('watch', function(){
     gulp.watch('index.html', ['html']);
-    gulp.watch('style.scss'), ['css'];
-    gulp.watch('app.js', ['js']);
+    gulp.watch('style.scss', ['css']);
+    gulp.watch('*.js', ['js']);
 })
